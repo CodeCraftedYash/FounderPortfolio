@@ -11,6 +11,7 @@ import Fourth from "./components/sections/Fourth";
 import { createAnimationContext } from "./utils/animationContext";
 import Fifth from "./components/sections/Fifth";
 import { createMultiItemScroll } from "./animations/createMultiItemScroll";
+import ScrollTracker from "./components/common/ScrollTracker";
 
 function App() {
   const containerRef = useRef(null);
@@ -32,6 +33,7 @@ function App() {
   );
   return (
     <main ref={containerRef} className="relative w-full h-screen font-body flex md:block flex-col gap-28">
+       <div className="hidden md:block"><ScrollTracker /></div>
       <section className="md:absolute inset-0 scene w-full">
         <Hero />
       </section>
@@ -55,8 +57,6 @@ function App() {
       <section className="md:absolute inset-0 scene w-[90%] mx-auto">
         <Fifth />
       </section>
-      
-
       <div className="hidden md:block"><CursorFollower /></div>
     </main>
   );
