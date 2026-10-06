@@ -1,12 +1,14 @@
 import chap2 from '../../assets/chap2.jpg';
 import BackgroundImage from "../common/BgPic"
+import bgImageMobile from "../../assets/mobile/second.webp";
 const Second = () => {
 const SData = ["FREEDOM", "CREATIVITY", "PRACTICAL MASTERY", "GLOBAL PERSPECTIVE"];
 
   return (
-    <div className="h-screen w-full flex flex-col items-left justify-center relative gap-4" data-motion="float-left">
-        <div data-motion="fade" className="opacity-60 absolute w-full h-full"><BackgroundImage source={chap2}/></div>
-        <div className="w-1/2 flex flex-col gap-5">
+    <div className="h-full md:h-screen w-full flex flex-col items-left justify-center relative gap-12 md:gap-4 md:p-0 " data-motion="float-left">
+        <div data-motion="fade" className="opacity-20 absolute w-full h-full scale-105 hidden md:block"><BackgroundImage source={chap2}/></div>
+        <div data-motion="fade" className="opacity-20 absolute w-full h-full md:hidden overflow-hidden scale-110"><BackgroundImage source={bgImageMobile}/></div>
+        <div className="w-full md:w-1/2 flex flex-col gap-5">
             <h3 className="font-tag text-(--gold-primary) border rounded-xl border-(--gold-primary) w-fit p-1 px-2 bg-(--fground-highlighted)" style={{fontSize:""}} data-motion="float-top-right">ACT 2/ THE OTHER PATH . AGE 09</h3>
 
             <h2 className="font-display font-semibold text-(--font-color-s1) leading-20" style={{fontSize:"var(--font-size-big)"}} data-motion="float-bottom-left">He chose a different path.</h2>
@@ -21,11 +23,11 @@ const SData = ["FREEDOM", "CREATIVITY", "PRACTICAL MASTERY", "GLOBAL PERSPECTIVE
             </h3></div>
         </div>
 
-          <ul className=' w-full flex gap-6'>
+          <ul className=' w-[90%] md:w-full flex flex-wrap gap-4 md:gap-6'>
             {SData.map((item,index)=>(
               <div key={index} className="font-tag flex gap-5 items-center"><li className='p-1 px-2 border rounded-xl border-white/30 bg-(--fground) hover:bg-(--fground-highlighted) hover:text-(--gold-light) text-white hover:cursor-default' style={{fontSize:"var(--font-size-xsmall)"}} data-motion="float-right">{item}</li>
                 {index !== SData.length - 1 && (
-                  <div className="w-2 aspect-square bg-(--gold-primary) rounded-full"></div>
+                  <div className="w-2 aspect-square bg-(--gold-primary) rounded-full" data-motion="float-right"></div>
                 )}
               </div>
             ))}

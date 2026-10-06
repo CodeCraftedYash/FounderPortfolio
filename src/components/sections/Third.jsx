@@ -6,9 +6,9 @@ import { BiRightArrow } from "react-icons/bi"
 
 const Third = () => {
   return (
-    <div className="flex items-center justify-between w-full h-full relative">
+    <div className="flex md:flex-row flex-col items-center justify-between w-full h-full relative md:gap-0 gap-10">
        {/** Left Section */}
-        <div className="border-r border-white/30 grow h-full pr-10 flex flex-col gap-8 items-left justify-center relative" data-motion="fade">
+        <div className="border-r border-white/30 grow h-full pr-10 flex flex-col gap-8 items-center md:items-start justify-center relative" data-motion="fade">
         <div className="absolute w-full h-full -z-20 opacity-3 pointer-events-none"><GridBg  cellSize={12} lineColor="white"/></div>
             <h3 className="text-(--gold-primary) border rounded-xl border-(--gold-primary) w-fit p-1 px-2 bg-(--fground-highlighted)" style={{fontSize:""}} data-motion="float-down">ACT 3/ THE SYSTEMIC WORKSHOP. THE FIRST BUILD</h3>
             
@@ -18,7 +18,7 @@ const Third = () => {
 
             <p className="text-(--gold-light)" data-motion="float-right">Shreshth launched Prowebmatrix as his foundational venture. What began as a single build rapidly scaled into an interconnected suite across borders.</p>
 
-            <div className="border-(--gold-dark) border-2 p-2 rounded-xl group hover:border-(--gold-light) transition-all duration-100 ease-in-out gap-2 flex flex-col w-[60%] items-center justify-center hover:bg-(--fground-highlighted) hover:cursor-default mt-10" data-motion="float-up">
+            <div className="border-(--gold-dark) border-2 p-2 rounded-xl group hover:border-(--gold-light) transition-all duration-100 ease-in-out gap-2 flex flex-col md:w-[60%] items-center justify-center hover:bg-(--fground-highlighted) hover:cursor-default mt-10" data-motion="float-up">
                 <h3 style={{fontSize:"var(--font-size-medium)"}} className="group-hover:text-(--font-color-s2) font-thin text-(--font-color)">
                “One company became a system. And this was only the first brick.”
             </h3>
@@ -30,7 +30,7 @@ const Third = () => {
         </div>
 
         {/** right Section */}
-        <div className="flex flex-col pb-4 ">
+        <div className="flex flex-col pb-4">
             {/** upper container */}
             <div className="flex w-full h-full p-4 gap-4 justify-between">
                 {/** first card */}
