@@ -1,27 +1,31 @@
 import Lenis from "lenis";
-import { ScrollTrigger,gsap } from "../library/gsap";
+import { ScrollTrigger, gsap } from "../library/gsap";
 
 export function createSmoothScroll() {
-    const lenis = new Lenis({
-        smoothWheel: true,
-    });
+  const lenis = new Lenis({
+    smoothWheel: true,
+  });
 
-    const update = () => {
-        ScrollTrigger.update();
-    };
+  // Expose Lenis globally so components can access it
+  window.lenis = lenis;
 
-    const raf = (time) => {
-        lenis.raf(time * 900);
-    };
+  const update = () => {
+    ScrollTrigger.update();
+  };
 
-    lenis.on("scroll", update);
+  const raf = (time) => {
+    lenis.raf(time * 900);
+  };
 
-    gsap.ticker.add(raf);
-    gsap.ticker.lagSmoothing(50);
+  lenis.on("scroll", update);
 
-    return () => {
-        lenis.off("scroll", update);
-        gsap.ticker.remove(raf);
-        lenis.destroy();
-    };
+  gsap.ticker.add(raf);
+  gsap.ticker.lagSmoothing(50);
+
+  return () => {
+    lenis.off("scroll", update);
+    gsap.ticker.remove(raf);
+    lenis.destroy();
+    delete window.lenis;
+  };
 }
