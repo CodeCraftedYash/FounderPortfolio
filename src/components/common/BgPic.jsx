@@ -46,7 +46,7 @@ export default function BackgroundImage({source}) {
       ref={picRef}
       src={source}     
       alt="Background"
-      className="scale-110"
+      className="scale-130"
       style={{
         position: 'absolute',
         top: '50%',
