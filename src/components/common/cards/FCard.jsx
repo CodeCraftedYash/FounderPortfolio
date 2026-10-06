@@ -9,7 +9,7 @@
 
             <h3 className="group-hover:text-(--gold-light) font-semibold" style={{fontSize:"var(--font-size-small)"}}>{body}</h3>
 
-            <div className="font-tag grow border-t-2 group-hover:border-(--gold-dark) p-4 flex flex-nowrap justify-between w-full  " style={{fontSize:"var(--font-size-xsmall)"}}>
+            <div className="font-tag grow border-t-2 group-hover:border-(--gold-dark) p-4 flex flex-nowrap justify-between w-full whitespace-nowrap gap-1" style={{fontSize:"var(--font-size-xsmall)"}}>
                 <h3 className="text-(--gold-light) group-hover:text-(--gold-dark)">{tag1}</h3>
                 <h3 className="text-(--gold-light) group-hover:text-(--gold-dark)">{tag2}</h3>
             </div>
