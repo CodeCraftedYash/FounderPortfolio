@@ -54,6 +54,18 @@ export const motionPresets = {
             y: 0,
         },
     },
+    "float-top-left": {
+        from: {
+            opacity: 0,
+            x: -80,
+            y: -80,
+        },
+        to: {
+            opacity: 1,
+            x: 0,
+            y: 0,
+        },
+    },
     "float-down": {
         from: {
             opacity: 0,
@@ -88,4 +100,18 @@ export const motionPresets = {
             y: 0,
         },
     },
+    "rotate-in": {
+        from:{
+            opacity: 0,
+            rotateY: -180,
+            scale: 0.8,
+        },
+        to: {
+            opacity: 1,
+            rotateY: 0,
+            ease:"power-in",
+            scale:1,
+            duration:1
+        },
+    }
 };
