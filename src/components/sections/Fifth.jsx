@@ -17,8 +17,8 @@ const Fifth = () => {
           ACT 5/ WHAT DRIVES THIS BUILDING? . THE DOCTRINE
         </h3>
         <h3
-          className="font-semibold text-(--font-color) leading-8 md:leading-16 mt-5 md:mt-0"
-          style={{ fontSize: "var(--font-size-large)" }}
+          className="font-semibold text-(--font-color) leading-12 md:leading-16 mt-5 md:mt-0"
+          style={{ fontSize: "var(--font-size-big)" }}
           data-motion="float-left"
         >
           Vision. Discipline.

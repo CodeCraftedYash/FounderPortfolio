@@ -12,6 +12,9 @@ import { createAnimationContext } from "./utils/animationContext";
 import Fifth from "./components/sections/Fifth";
 import { createMultiItemScroll } from "./animations/createMultiItemScroll";
 import ScrollTracker from "./components/common/ScrollTracker";
+import Sixth from "./components/sections/Sixth";
+import Seventh from "./components/sections/Seventh";
+import Eight from "./components/sections/Eight";
 
 function App() {
   const containerRef = useRef(null);
@@ -57,6 +60,19 @@ function App() {
       <section className="md:absolute inset-0 scene w-[90%] mx-auto">
         <Fifth />
       </section>
+      
+      <section className="md:absolute inset-0 scene w-[90%] mx-auto">
+        <Sixth />
+      </section>
+      
+      <section className="md:absolute inset-0 scene w-[90%] mx-auto">
+        <Seventh />
+      </section>
+      
+      <section className="md:absolute inset-0 scene w-[90%] mx-auto">
+        <Eight />
+      </section>
+
       <div className="hidden md:block"><CursorFollower /></div>
     </main>
   );

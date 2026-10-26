@@ -12,7 +12,7 @@ const Third = () => {
         <div className="absolute w-full h-full -z-20 opacity-3 pointer-events-none"><GridBg  cellSize={12} lineColor="white"/></div>
             <h3 className="text-(--gold-primary) border rounded-xl border-(--gold-primary) w-fit p-1 px-2 bg-(--fground-highlighted)" style={{fontSize:""}} data-motion="float-down">ACT 3/ THE SYSTEMIC WORKSHOP. THE FIRST BUILD</h3>
             
-            <h3 className="font-semibold text-(--font-color) leading-16" style={{fontSize:"var(--font-size-large)"}} data-motion="float-left">What started with curiosity became a company.</h3>
+            <h3 className="font-semibold text-(--font-color) leading-16" style={{fontSize:"var(--font-size-big)"}} data-motion="float-left">What started with curiosity became a company.</h3>
 
             <h3 className="text-(--font-color-s2) leading-8" style={{fontSize:"var(--font-size-semi-large)"}} data-motion="float-right">Prowebmatrix: Built from the belief that technology must solve real problems.</h3>
 

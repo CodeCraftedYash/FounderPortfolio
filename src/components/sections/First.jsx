@@ -30,7 +30,7 @@ const First = () => {
 
         <h2
           className="font-display text-(--font-color-s1)"
-          style={{ fontSize: "var(--font-size-large)" }}
+          style={{ fontSize: "var(--font-size-big)" }}
           data-motion="float-bottom-left"
         >
           Before there was a company, there was curiosity

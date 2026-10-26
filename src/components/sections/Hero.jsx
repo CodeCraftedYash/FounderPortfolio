@@ -13,7 +13,7 @@ const Hero = () => {
      <div className="overflow-hidden block md:hidden absolute inset-0 -z-40">
       <BackgroundImage source={heroImg} />
       </div>
-      <div className="w-full flex flex-col gap-12 md:justify-around md:w-1/2 h-2/3 md:h-full pl-4 py-16  md:gap-4 items-center md:items-start">
+      <div className="w-full flex flex-col gap-12 md:justify-center md:w-1/2 h-2/3 md:h-full pl-4 py-16  md:gap-8 items-center md:items-start">
         <h1
           className=" font-tag p-2 border border-(--gold-primary) w-fit font-bold bg-[rgba(11,17,22,0.8)] text-(--gold-primary) rounded-lg"
           style={{ fontSize: "var(--font-size-small)" }}

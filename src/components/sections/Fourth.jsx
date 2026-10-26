@@ -36,7 +36,7 @@ const Fourth = () => {
         <div className="my-5 w-full">
           <h2
             className="font-display text-(--font-color)"
-            style={{ fontSize: "var(--font-size-large)" }}
+            style={{ fontSize: "var(--font-size-big)" }}
             data-motion="float-top-left"
           >
             The first company became a foundation.
