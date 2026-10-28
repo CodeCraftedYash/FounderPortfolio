@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace example.com before deployment.
+Sitemap: https://example.com/sitemap.xml
